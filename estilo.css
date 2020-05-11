@@ -1,0 +1,31 @@
+body {
+    background-image: url('https://image.freepik.com/free-vector/futuristic-technology-background_23-2148494694.jpg');
+    background-size: auto 100vw;
+    font-family: Arial;
+    height: 100vh;
+    }
+  .menu{
+    background-color: white
+  }
+  .menu li{
+    list-style: none
+  }
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  a {
+    color: teal;
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  .subtitle,
+  .site-title{
+    color:whitesmoke;
+    text-align:center;
+  }
+  .subtitle{
+    font-style: italic;
+  }
