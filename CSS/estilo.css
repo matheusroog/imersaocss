@@ -1,21 +1,57 @@
+
+/* soft reset css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+
 body {
     background-image: url('https://image.freepik.com/free-vector/futuristic-technology-background_23-2148494694.jpg');
     background-size: auto 100vw;
     font-family: Arial;
     height: 100vh;
+    font-size: 16px;
     }
-  .menu{
-    background-color: white
-  }
+    /*Se for pelomenos 400 pixels funciona os estilos*/
+    @media (min-widht: 400px) {
+      body{
+        font-size: 14px;
+      }
+    }
+    @media (min-widht: 1200px) {
+      body{
+        font-size: 18px;
+        background-image: none;
+      }
+    }
+    
+    header {
+      height: 75vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .menu{background-color: whitesmoke;
+      position: fixed;
+      width: 100vw;
+      top: 10px;
+    }
+
   .menu li{
     list-style: none
+  }
+
+  .menu a {
+    display:block;
+    padding: 10px 20px;
   }
   .menu ul {
     display: flex;
     justify-content: space-around;
-  }
+    font-family: monospace;}
   a {
-    color: teal;
+    color: rgb(0, 0, 0);
     text-decoration: none;
   }
   a:hover{
@@ -25,7 +61,18 @@ body {
   .site-title{
     color:whitesmoke;
     text-align:center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .site-title {
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .subtitle{
     font-style: italic;
+    font-style: oblique;
+  }
+
+  .img-portfolio {
+    width: 120px;
+    height: 100px;
   }
