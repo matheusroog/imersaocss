@@ -7,8 +7,8 @@
 }
 
 body {
-    background-image: url('https://image.freepik.com/free-vector/futuristic-technology-background_23-2148494694.jpg');
-    background-size: 210vh 80vw;
+    background-image: url('https://image.freepik.com/free-vector/retro-vaporwave-background-cyberpunk-laser-grid-80s-style-abstract-futuristic-landscape_87408-125.jpg');
+    background-size: 200vh 100vh;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -99,6 +99,7 @@ body {
     font-size: 1.5em;
     text-indent: 1em;
     text-align: justify;
+    background-color: rgba(255, 255, 255, 0.199);
   }
   
   .Sobre a {
@@ -168,7 +169,7 @@ body {
 
 footer{
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.24);
+  background-color: rgba(0, 0, 0, 0.486);
   padding: 60px 0px;
 }
 
