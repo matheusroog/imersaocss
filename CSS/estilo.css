@@ -3,15 +3,17 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;}
+  box-sizing: border-box;
+}
 
 body {
     background-image: url('https://image.freepik.com/free-vector/futuristic-technology-background_23-2148494694.jpg');
-    background-size: auto 100vw;
+    background-size: 210vh 80vw;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     text-align: center;
+    background-attachment: fixed;
     }
     /*Se for pelomenos 400 pixels funciona os estilos*/
     @media (min-widht: 400px) {
@@ -40,10 +42,13 @@ body {
       align-items: center;
       
     }
-    .menu{background-color: whitesmoke;
+    .menu{
+      background-color: whitesmoke;
       position: fixed;
       width: 100vw;
       top: 10px;
+      box-shadow: 0px 4px 10px black;
+      z-index: 1;
     }
 
   .menu li{
@@ -79,10 +84,36 @@ body {
   .subtitle{
     font-family: 'Baloo Chettan 2', cursive;
   }
+  
+  
+  
   section.portfolio {
     padding: 2em;
     margin-bottom: 2em;
     height: 100vh;
+  }
+
+  .Sobre p {
+    color: whitesmoke;
+    margin: 2em;
+    font-size: 1.5em;
+    text-indent: 1em;
+    text-align: justify;
+  }
+  
+  .Sobre a {
+    color:yellow;
+  }
+
+
+  .Sobre .profile{
+    float: right;
+    margin-left: 2em;
+  }
+  
+  .Sobre .profile img {
+    border-radius: 50%;
+    margin-right: 2em;
   }
 
   .portfolio .grid {
@@ -93,14 +124,10 @@ body {
     justify-content: space-between;
 
   }
-  @media (min-widht 700px){
+    @media (min-whidth 600px){
     .porfolio .grid {
       grid-template-columns: 150px 150px;
     }
-  }
-
-  .portfolio figure {
-    
   }
   
   .img-portfolio {
@@ -109,9 +136,78 @@ body {
     object-fit:cover;
     border-radius:50%;
   }
+
+
+  .img-portfolio:hover {   
+    transform: scale(1.1);
+  }
+
+
   figcaption {
     background-color: #0000001f;
     color: white;
     box-shadow: 4px 4px 0px 0px black;
 }
+
+.sobre,
+.contato a {
+  color: whitesmoke;
+  font-size: 4em;
+  transition: text-shadow 1s; 
+}
+
+
+.contato a:hover{
+  text-decoration: none;
+  text-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+
+
+
+/*-----Footer------*/
+
+footer{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.24);
+  padding: 60px 0px;
+}
+
+
+.typewriter {
+  font-family: Courier, monospace;
+display: inline-block;
+color: whitesmoke;
+}
+
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+ animation: typing 5s steps(35, end), blink .75s step-end infinite;
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: 700;
+  border-right: 4px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+}
+
+@keyframes typing {
+  from { 
+      width: 0% 
+  }
+  to { 
+      width: 100% 
+  }
+}
+
+@keyframes blink {
+  from, to { 
+      border-color: transparent 
+  }
+  50% { 
+      border-color: rgb(255, 255, 255); 
+  }
+}
+
+
 

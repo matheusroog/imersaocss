@@ -5,15 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Document</title>
   <link rel="stylesheet" href="CSS/estilo.css">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600&family=Poppins&family=Press+Start+2P&display=swap" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600&family=Poppins&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/217e66f659.js" crossorigin="anonymous"></script>
+
+</head>
 
 <body>
-  <header>
+  <header id="home"> 
     <nav class="menu">
       <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#home"><i class="fas fa-home"></i></a></li>
+        <li><a href="#Sobre">Sobre</a></li>
+        <li><a href="#portfolio">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#cafe"><i class="fas fa-mug-hot"></i></a></li>
       </ul>
     </nav>
     <div> 
@@ -25,7 +30,31 @@ text-shadow: 4px 3px 0px black;
 ">Meu nome é Matheus Rogerio e sou jr. web developer/designer</h2>
     </div>
   </header>
-  <section class="portfolio">
+  <section class="Sobre" id="Sobre">
+    <h2 style="
+    text-shadow: 5px 6px black;
+">Sobre</h2>
+
+    <figure class="profile">
+      <img src="https://scontent.faqa2-1.fna.fbcdn.net/v/t1.15752-9/99048915_1638029989678599_7676119010592686080_n.png?_nc_cat=105&_nc_sid=b96e70&_nc_ohc=tmpUnOkUtB8AX9sfqwd&_nc_ht=scontent.faqa2-1.fna&oh=6761d2b8eff3a2570fd46457a68cd9f3&oe=5EEB7000" alt="Matheus Rogerio" style="
+      /* size: 5px; */
+      width: 250px;"> 
+        </figure>
+
+      <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus ipsa nemo eius consequuntur tenetur qui. Doloremque facere distinctio aspernatur beatae qui dolorum, quis, alias ducimus illum quas voluptatem deserunt aut?
+      </p>
+      
+      <p> Error laborum nemo cupiditate praesentium ex, necessitatibus vitae fugit, reiciendis odit nulla eum molestias reprehenderit modi eos velit alias in consectetur porro, corporis exercitationem! Magni, sunt reprehenderit. Assumenda, cumque nesciunt?
+      </p>  
+
+      <p> Quisquam perferendis earum dignissimos, nulla eos sed provident. Beatae laboriosam omnis animi dolorem quo minima quasi ipsum debitis, perspiciatis aliquid facere voluptatibus molestiae in ipsa quidem voluptate aut! Repudiandae, consequuntur!
+      </p>
+
+      <p> Este site foi construido durante a <a href="https://www.alura.com.br/imersao-css"> Imersão CSS da Alura </a> 
+      </p>
+    
+  </section>
+  <section class="portfolio" id="portfolio">
     <h2 style="
     text-shadow: 5px 3px black;
 ">Projetos</h2>
@@ -47,9 +76,39 @@ text-shadow: 4px 3px 0px black;
         <img class="img-portfolio" src="https://miro.medium.com/max/1048/1*PRBSAEttwhN8CRTj3PWzjA.jpeg" alt="Projetos pessoais">
         <figcaption>Projetos pessoais</figcaption>
       </figure>
+    </section>
+    <section class="contato" id="contato">
+      <h2 style="
+      text-shadow: 4px 4px black;
+  ">Contato</h2>     
+       <div class="grid icons">
+        <a target="_blank" href="https://github.com/matheusroog">
+          <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/matheusrog/?hl=pt-br">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/matheus-rogerio-758571155/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:matheusroog@gmail.com">
+          <i class="fas fa-at"></i>
+        </a>
+      </div>
+    </section>
+   
+    <footer>
+      
+      <div class="typewriter">
+        <div class="typewriter-text">Site em desenvolvimento...☕</div>
     </div>
 
-  </section>
+    <P>
+      Todos os direitos reservados As imagens utilizadas foram retiradas de freepik.com
+    </P>
+
+    </footer>
 </body>
 
-</html>
+
+      
